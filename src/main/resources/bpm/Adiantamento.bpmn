@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="definitions_91831011-76bd-4b65-b9f0-954b4eadc637" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <process id="solicitar_adiantamento" isExecutable="true">
+    <startEvent id="StartEvent_SolicitacaoDeAdiantamento" name="Pedido de adiantamento recebido" camunda:initiator="nomeUsuarioInicioInstancia">
+      <extensionElements>
+        <camunda:formData>
+          <camunda:formField id="nroAdiantamento" label="Número do Adiantamento" type="long" />
+          <camunda:formField id="dataAdiantamento" label="Data do Adiantamento" type="date" />
+          <camunda:formField id="credor" label="Credor" type="enum">
+            <camunda:value id="josesilva" name="José da Silva" />
+            <camunda:value id="pedroduarte" name="Pedro Duarte" />
+            <camunda:value id="joaocaio" name="João Caio Fernandes" />
+            <camunda:value id="edsonnogueira" name="Edson Nogueira" />
+          </camunda:formField>
+          <camunda:formField id="tipoAdiantamento" label="Tipo do Adiantamento" type="enum">
+            <camunda:value id="supfundo" name="Suprimentos de Fundo" />
+            <camunda:value id="adtofolha" name="Adiantamento de Folha de Pagamento" />
+            <camunda:value id="tk" name="Ticket" />
+            <camunda:value id="adforn" name="Adiantamento à Fornecedores" />
+          </camunda:formField>
+          <camunda:formField id="subTipo" label="Sub-Tipo" type="enum">
+            <camunda:value id="sub1" name="Suprimentos de Fundo" />
+          </camunda:formField>
+          <camunda:formField id="dataLimite" label="Data Limite da Prestação de Contas" type="date" />
+          <camunda:formField id="valorConcedido" label="Valor Concedido" type="long" />
+          <camunda:formField id="finalidade" label="Finalidade" type="string" />
+        </camunda:formData>
+      </extensionElements>
+      <outgoing>SequenceFlow_0y00gjn</outgoing>
+    </startEvent>
+    <sequenceFlow id="SequenceFlow_0y00gjn" sourceRef="StartEvent_SolicitacaoDeAdiantamento" targetRef="Task_LiberarAdiantamento" />
+    <endEvent id="EndEvent_1drcwag">
+      <incoming>SequenceFlow_16hlg90</incoming>
+    </endEvent>
+    <userTask id="Task_LiberarAdiantamento" name="Liberar Adiantamento ${nroAdiantamento}">
+      <extensionElements>
+        <camunda:formData>
+          <camunda:formField id="nroAdiantamento" label="Número do Adiantamento" type="long" />
+          <camunda:formField id="dataAdiantamento" label="Data do Adiantamento" type="date" />
+          <camunda:formField id="credor" label="Credor" type="enum">
+            <camunda:value id="josesilva" name="José da Silva" />
+            <camunda:value id="pedroduarte" name="Pedro Duarte" />
+            <camunda:value id="joaocaio" name="João Caio Fernandes" />
+            <camunda:value id="edsonnogueira" name="Edson Nogueira" />
+          </camunda:formField>
+          <camunda:formField id="tipoAdiantamento" label="Tipo do Adiantamento" type="enum">
+            <camunda:value id="supfundo" name="Suprimentos de Fundo" />
+          </camunda:formField>
+          <camunda:formField id="subTipo" label="Sub-Tipo" type="enum">
+            <camunda:value id="sub1" name="Suprimentos de Fundo" />
+          </camunda:formField>
+          <camunda:formField id="dataLimite" label="Data Limite da Prestação de Contas" type="date" />
+          <camunda:formField id="valorConcedido" label="Valor Concedido" type="long" />
+          <camunda:formField id="finalidade" label="Finalidade" type="string" />
+          <camunda:formField id="parecer" label="Liberado" type="boolean" />
+        </camunda:formData>
+      </extensionElements>
+      <incoming>SequenceFlow_0y00gjn</incoming>
+      <outgoing>SequenceFlow_07rd1ya</outgoing>
+    </userTask>
+    <userTask id="Task_NotificarSetorEmpenho" name="Notificar setor de empenho sobre pedido de adiantamento ${nroAdiantamento}">
+      <incoming>SequenceFlow_02dyc33</incoming>
+      <outgoing>SequenceFlow_16hlg90</outgoing>
+    </userTask>
+    <exclusiveGateway id="ExclusiveGateway_07j4e7c">
+      <incoming>SequenceFlow_07rd1ya</incoming>
+      <outgoing>SequenceFlow_00bq8mh</outgoing>
+      <outgoing>SequenceFlow_02dyc33</outgoing>
+    </exclusiveGateway>
+    <endEvent id="EndEvent_1hro0sb" name="Encerra o Pedido ">
+      <incoming>SequenceFlow_00bq8mh</incoming>
+    </endEvent>
+    <sequenceFlow id="SequenceFlow_00bq8mh" name="Não Autorizado" sourceRef="ExclusiveGateway_07j4e7c" targetRef="EndEvent_1hro0sb">
+      <conditionExpression xsi:type="tFormalExpression">${parecer==false}</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="SequenceFlow_07rd1ya" sourceRef="Task_LiberarAdiantamento" targetRef="ExclusiveGateway_07j4e7c" />
+    <sequenceFlow id="SequenceFlow_02dyc33" sourceRef="ExclusiveGateway_07j4e7c" targetRef="Task_NotificarSetorEmpenho" />
+    <sequenceFlow id="SequenceFlow_16hlg90" sourceRef="Task_NotificarSetorEmpenho" targetRef="EndEvent_1drcwag" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_3923b769-77fb-4781-b3a0-1d45fbb517b4">
+    <bpmndi:BPMNPlane id="BPMNPlane_ecc54abb-b588-4d4c-bac9-f93d3df0939e" bpmnElement="solicitar_adiantamento">
+      <bpmndi:BPMNShape id="StartEvent_08tueeb_di" bpmnElement="StartEvent_SolicitacaoDeAdiantamento">
+        <dc:Bounds x="151" y="26" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="138" y="69" width="68" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0y00gjn_di" bpmnElement="SequenceFlow_0y00gjn">
+        <di:waypoint x="187" y="44" />
+        <di:waypoint x="286" y="44" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_1drcwag_di" bpmnElement="EndEvent_1drcwag">
+        <dc:Bounds x="770" y="26" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_1tnfk06_di" bpmnElement="Task_LiberarAdiantamento">
+        <dc:Bounds x="286" y="4" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_0st6p7r_di" bpmnElement="Task_NotificarSetorEmpenho">
+        <dc:Bounds x="604" y="4" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_07j4e7c_di" bpmnElement="ExclusiveGateway_07j4e7c" isMarkerVisible="true">
+        <dc:Bounds x="467" y="19" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1hro0sb_di" bpmnElement="EndEvent_1hro0sb">
+        <dc:Bounds x="474" y="-145" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="451" y="-175" width="86" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_00bq8mh_di" bpmnElement="SequenceFlow_00bq8mh">
+        <di:waypoint x="492" y="19" />
+        <di:waypoint x="492" y="-109" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="500" y="-32" width="77" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_07rd1ya_di" bpmnElement="SequenceFlow_07rd1ya">
+        <di:waypoint x="386" y="44" />
+        <di:waypoint x="467" y="44" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_02dyc33_di" bpmnElement="SequenceFlow_02dyc33">
+        <di:waypoint x="517" y="44" />
+        <di:waypoint x="604" y="44" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_16hlg90_di" bpmnElement="SequenceFlow_16hlg90">
+        <di:waypoint x="704" y="44" />
+        <di:waypoint x="770" y="44" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

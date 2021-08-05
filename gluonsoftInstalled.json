@@ -1,0 +1,26 @@
+[
+  {
+    "gluonsoftId": "CE4CAF6E-E075-4947-82E3-708C5577A19C",
+    "versionId": "C24E87B5-BE17-472F-BF4F-99638B8E7FA3",
+    "name": "Cronapp Workflow (BPM)",
+    "version": "1.0.4",
+    "dateAdded": "2021-07-22 17:32:56",
+    "filesMerged": [
+      {
+        "name": "pom.xml",
+        "path": "/pom.xml",
+        "mavenDependecies": [
+          {
+            "artifactId": "cronapi-workflow",
+            "classifier": null,
+            "groupId": "io.cronapp",
+            "scope": null,
+            "systemPath": null,
+            "type": null,
+            "version": "1.0.4"
+          }
+        ]
+      }
+    ]
+  }
+]

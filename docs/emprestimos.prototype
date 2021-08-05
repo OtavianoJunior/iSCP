@@ -1,0 +1,139 @@
+<mxGraphModel dx="713" dy="485" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=14;" edge="1" parent="1" source="2">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="370" y="610.90283203125" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fillColor=#ffffff;gradientColor=none;gradientDirection=east;" vertex="1" parent="1">
+      <mxGeometry x="47" y="145" width="671" height="537" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="Empréstimos e Financiamentos Concedidos" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="335.5000000000001" height="20" relative="1" as="geometry">
+        <mxPoint x="10" y="6" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="4" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="659" height="10" relative="1" as="geometry">
+        <mxPoint x="10" y="26" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="5" value="Código:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="61.62244897959185" height="20" relative="1" as="geometry">
+        <mxPoint x="10" y="40" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="7" value="Credor:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="68.46938775510206" height="20" relative="1" as="geometry">
+        <mxPoint x="10" y="86" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="11" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry y="1" width="651" height="10" relative="1" as="geometry">
+        <mxPoint x="10" y="-47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="17" value="Número do Contrato:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="135.79761904761907" height="20" relative="1" as="geometry">
+        <mxPoint x="10.5" y="128.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="6" value="Código" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="102.70408163265309" height="25" relative="1" as="geometry">
+        <mxPoint x="140.5" y="40" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="8" value="Credor" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="102.70408163265309" height="25" relative="1" as="geometry">
+        <mxPoint x="140.5" y="82" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="16" value="Número do Contrato" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="214.53741496598644" height="25" relative="1" as="geometry">
+        <mxPoint x="140" y="124.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="19" value="Data do Lançamento:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="135.79761904761907" height="20" relative="1" as="geometry">
+        <mxPoint x="9" y="167" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="20" value="&amp;nbsp; /&amp;nbsp; /" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="102.70408163265309" height="25" relative="1" as="geometry">
+        <mxPoint x="139.5" y="165" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="21" value="Valor da Concessão" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="135.79761904761907" height="20" relative="1" as="geometry">
+        <mxPoint x="8.5" y="250" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="23" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Tipo de Concessão&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=14;spacingLeft=3;" vertex="1" parent="2">
+      <mxGeometry x="138.4643463544251" y="205.70794392523368" width="204.45380875202596" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="24" value="Credor" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;fillColor=#E1D5E7;" vertex="1" parent="2">
+      <mxGeometry width="439" height="25" relative="1" as="geometry">
+        <mxPoint x="232" y="82" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="25" value="Início da Vigência:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="135.79761904761907" height="20" relative="1" as="geometry">
+        <mxPoint x="8.5" y="287.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="26" value="&amp;nbsp; /&amp;nbsp; /" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="102.70408163265309" height="25" relative="1" as="geometry">
+        <mxPoint x="139" y="286.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="27" value="Tipo de Concessão:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="135.79761904761907" height="20" relative="1" as="geometry">
+        <mxPoint x="10.5" y="207" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="28" value="Valor" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="2">
+      <mxGeometry width="102.70408163265309" height="25" relative="1" as="geometry">
+        <mxPoint x="139.5" y="248.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="30" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fillColor=#eeeeee;strokeColor=#999999;gradientColor=#cccccc;align=left;spacingLeft=4;fontSize=17;fontColor=#666666;labelPosition=right;" vertex="1" parent="2">
+      <mxGeometry x="139.5250485121115" y="328.6291262968362" width="17.117346938775515" height="18.820093457943926" as="geometry"/>
+    </mxCell>
+    <mxCell id="33" value="Juros Pré Fixados?" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="107" height="20" relative="1" as="geometry">
+        <mxPoint x="10" y="326.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="35" value="Finalidade:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="2">
+      <mxGeometry width="107" height="20" relative="1" as="geometry">
+        <mxPoint x="10.5" y="361.5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="36" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#999999;mainText=;align=left;fillColor=#ffffff;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="2">
+      <mxGeometry x="13" y="387" width="653" height="101" as="geometry"/>
+    </mxCell>
+    <mxCell id="37" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rrect;rSize=10;fillColor=#ffffff;strokeColor=#666666;fontSize=14;" vertex="1" parent="2">
+      <mxGeometry x="12.5" y="503" width="500" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="38" value="Button 2" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rrect;rSize=0;fontSize=17;fontColor=#666666;fontStyle=1;resizeHeight=1;" vertex="1" parent="37">
+      <mxGeometry width="125" height="27" relative="1" as="geometry">
+        <mxPoint x="125" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="39" value="Button 3" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rrect;rSize=0;fontSize=17;fontColor=#666666;fontStyle=1;resizeHeight=1;" vertex="1" parent="37">
+      <mxGeometry width="125" height="27" relative="1" as="geometry">
+        <mxPoint x="250" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="40" value="Button 4" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rightButton;rSize=10;fontSize=17;fontColor=#666666;fontStyle=1;resizeHeight=1;" vertex="1" parent="37">
+      <mxGeometry x="1" width="125" height="27" relative="1" as="geometry">
+        <mxPoint x="-125" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="41" value="Cnacelar" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.leftButton;rSize=10;fontSize=17;fontColor=#ffffff;fontStyle=1;fillColor=#008cff;strokeColor=#008cff;resizeHeight=1;" vertex="1" parent="37">
+      <mxGeometry width="125" height="27" relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
