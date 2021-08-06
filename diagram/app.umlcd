@@ -4639,6 +4639,73 @@
     },
     {
       "angle": 0,
+      "attributes": [],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 30,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 105.515625,
+          "text": ""
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,80)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "TesteVersao"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [],
+      "generateView": "Auto",
+      "id": "4bac7288-bff8-490d-aa55-b95530b3f3f2",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "TesteVersao",
+      "position": {
+        "x": 362,
+        "y": 192
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 66.1413345336914,
+        "width": 122.515625
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 61
+    },
+    {
+      "angle": 0,
       "attributes": [
         "id:java.lang.String",
         "Municipio:java.lang.String",
@@ -7508,6 +7575,7 @@
         "5ff2431f-e912-4be6-b5b1-2551655e0e4c",
         "771b93f9-59a1-48b8-a551-5e01346a2ded",
         "8c6c0bcf-35c2-4dbc-b17c-761de1a6a881",
+        "4bac7288-bff8-490d-aa55-b95530b3f3f2",
         "148a9e85-3e2a-4a3f-bd3e-0715f7c25122",
         "5f3372ff-5a16-41fc-b741-8c5b0240a38a",
         "93199c84-1494-4154-8afd-cd2537ebb573"
@@ -7528,6 +7596,7 @@
         "55beab5c-2393-4e53-879f-87138492feb1",
         "771b93f9-59a1-48b8-a551-5e01346a2ded",
         "8c6c0bcf-35c2-4dbc-b17c-761de1a6a881",
+        "4bac7288-bff8-490d-aa55-b95530b3f3f2",
         "148a9e85-3e2a-4a3f-bd3e-0715f7c25122",
         "5f3372ff-5a16-41fc-b741-8c5b0240a38a",
         "93199c84-1494-4154-8afd-cd2537ebb573",
